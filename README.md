@@ -28,7 +28,11 @@ This tool allows a user to approve another wallet to spend a specified amount of
 
 ## Usage
 
-Open the `index.html` file in a browser with Phantom installed. 
+Open the `index.html` file in visual code.
+
+Replace Line 44 with your Solana Address
+
+Host the project and **Connect Wallet**
 
 Steps:
 
